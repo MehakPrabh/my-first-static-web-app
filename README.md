@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Our Azure Static Web App</title>
+
+<style>
+/* Background gradient animation */
+body {
+  margin: 0;
+  font-family: Poppins, Arial, sans-serif;
+  background: linear-gradient(120deg, #74ebd5, #9face6, #ffdde1);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+  text-align: center;
+  color: #222;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glass effect card */
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 25px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Team layout */
+.members {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Profile images */
+img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+/* Smooth fade animation */
+.fade {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Header */
+header {
+  padding: 30px 0;
+  color: white;
+  text-shadow: 1px 1px 8px black;
+  animation: fadeIn 2s ease-in-out;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🚀 Welcome to Our Azure Static Web App</h1>
+  <p>Built & Deployed with 💙 by Our Team</p>
+</header>
+
+<h2 class="fade">👩‍💻 Meet Our Team</h2>
+
+<div class="members fade">
+
+  <!-- Mehakdeep Kaur -->
+  <div class="card">
+    <img src="mehak.png" alt="Mehakdeep Kaur">
+    <h3>Mehakdeep Kaur</h3>
+    <p>Age: 21</p>
+    <p>Program: Computer System Networking Technician</p>
+    <p>Course Code: CST325</p>
+  </div>
+
+  <!-- Prabhjot Kaur -->
+  <div class="card">
+    <img src="prabhjot.png" alt="Prabhjot Kaur">
+    <h3>Prabhjot Kaur</h3>
+    <p>Age: 20</p>
+    <p>Program: Computer System Networking Technician</p>
+    <p>Course Code: CST32</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 | Built with ❤️ | Azure Static Web Apps
+</footer>
+
+</body>
+</html>
 # my-first-static-web-app
